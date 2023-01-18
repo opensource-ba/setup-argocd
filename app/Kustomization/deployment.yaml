@@ -16,5 +16,5 @@ spec:
         app: random-logger
     spec:
       containers:
-        name: random-logger
-        image: devlopesbernardo/random-logger:2.0
+        - name: random-logger
+          image: devlopesbernardo/random-logger:2.0
