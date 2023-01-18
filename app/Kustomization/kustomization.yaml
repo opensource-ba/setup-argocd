@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: random-logger
 resources:
   - ./deployment.yaml
+  - ./namespace.yaml
 images:
   - name: devlopesbernardo/random-logger
     newTag: "2.0"
