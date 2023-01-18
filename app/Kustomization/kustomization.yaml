@@ -1,0 +1,10 @@
+# Create a kustomization with the deployment.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: random-logger
+resources:
+  - ./deployment.yaml
+  - ./namespace.yaml
+images:
+  - name: devlopesbernardo/simple-random-logger
+    newTag: "2.0"

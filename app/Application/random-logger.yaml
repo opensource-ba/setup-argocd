@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: random-logger
+  namespace: argocd
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: app/Kustomization/
+    repoURL: https://github.com/opensource-ba/setup-argocd/
+    targetRevision: feature/core
+  syncPolicy:
+    automated: {}
+    syncOptions:
+    - CreateNamespace=true
