@@ -7,4 +7,4 @@ resources:
   - ./namespace.yaml
 images:
   - name: devlopesbernardo/simple-random-logger
-    newTag: "3.0"
+    newTag: "5.1"
